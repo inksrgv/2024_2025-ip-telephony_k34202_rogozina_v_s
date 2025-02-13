@@ -50,6 +50,51 @@ Date of finished: -
 
 ### Ход выполнения задания
 
+Сначала была собрана схема сети, роутер был сразу переименован в CMERouter:
+
+![Снимок экрана 2025-02-13 175812](https://github.com/user-attachments/assets/252d4e05-09cc-48ca-9b89-7da807f84e91)
+
+Затем был отключен синтаксис ввода слов от DNS серверов с помощью команды ``:
+
+![Снимок экрана 2025-02-13 175845](https://github.com/user-attachments/assets/deceb7c7-b49b-411e-b202-9dd5d1c90d21)
+
+Далее были заданы пароли для защиты маршрутизатора как в удаленном режиме, так и в режиме консоли:
+
+![Снимок экрана 2025-02-13 180339](https://github.com/user-attachments/assets/684cb1d2-d3c0-4ddf-933e-407a4fd576ce)
+
+После этого был настроен интерфейс FastEthernet0/0 на маршрутизаторе:
+
+![Снимок экрана 2025-02-13 180425](https://github.com/user-attachments/assets/6defe102-10d4-44d5-b2f9-3dc75d35f2e0)
+
+Далее маршрутизатор(DHCP сервер) был настроен для передачи голоса и данных:
+
+![Снимок экрана 2025-02-13 180903](https://github.com/user-attachments/assets/3d008bdc-99ca-4254-809d-b2cd0edc5a6e)
+
+После этого на маршуртизаторе были настроены услуги телефонии Cisco CallManager Express:
+
+![Снимок экрана 2025-02-13 181328](https://github.com/user-attachments/assets/ab68a9da-f263-41d8-b1b1-7ec649a03ddc)
+
+Затем на коммутаторе были созданы VLAN порты для взаимодействия коммутатора с маршрутизатором:
+
+![Снимок экрана 2025-02-13 181644](https://github.com/user-attachments/assets/ac1d801b-0613-4d0b-a062-6d1d49d87d7f)
+
+Продолжим настройку и выдадим номера телефонам:
+
+![Снимок экрана 2025-02-13 181829](https://github.com/user-attachments/assets/57534c77-375e-44d5-99de-c3ffa3de20dc)
+
+Далее проверим связность телефонов:
+
+2->1
+
+![Снимок экрана 2025-02-13 182025](https://github.com/user-attachments/assets/ef7caecd-e190-4d1b-84e2-b643fc0e9ad2)
+
+2->3
+
+![Снимок экрана 2025-02-13 182118](https://github.com/user-attachments/assets/5ebf5a7c-694e-4798-bd83-98406aa8f770)
+
+3->1
+
+![Снимок экрана 2025-02-13 182219](https://github.com/user-attachments/assets/d1f27b36-ec87-4a0b-a467-8258cd10329f)
 
 ## Часть 2
 
